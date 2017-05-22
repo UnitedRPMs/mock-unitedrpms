@@ -1,5 +1,5 @@
 %global gitdate 20170522
-%global commit0 91e0100814673cd110dbc4162a3576dd9945bf43
+%global commit0 04eec84563384d4d6109621126873814ffaf3eb5
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
@@ -40,5 +40,5 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
-* Fri May 19 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-1git91e0100
+* Fri May 19 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-1git04eec84
 - Initial build

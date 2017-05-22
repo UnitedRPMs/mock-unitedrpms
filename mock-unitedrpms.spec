@@ -1,5 +1,5 @@
-%global gitdate 20170519
-%global commit0 44019727be2a005a63cb9070682293d0bfdff201
+%global gitdate 20170522
+%global commit0 91e0100814673cd110dbc4162a3576dd9945bf43
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
@@ -30,14 +30,15 @@ Mock config files for the UnitedRPMs Project
 
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/mock
-install -pm 0644 etc/mock/fedora*.cfg %{buildroot}%{_sysconfdir}/mock
+install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %files
 %defattr(-,root,root,-)
-%config(noreplace) %{_sysconfdir}/mock/fedora*.cfg
+#%config(noreplace) %{_sysconfdir}/mock/unitedrpms*.cfg
+%{_sysconfdir}/mock/unitedrpms*.cfg
 
 
 %changelog
-* Fri May 19 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-1git1234567
+* Fri May 19 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-1git91e0100
 - Initial build

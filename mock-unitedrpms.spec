@@ -30,12 +30,12 @@ Mock config files for the UnitedRPMs Project
 
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/mock
-install -pm 0644 etc/mock/unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
+install -pm 0644 etc/mock/fedora*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %files
 %defattr(-,root,root,-)
-%config(noreplace) %{_sysconfdir}/mock/unitedrpms*.cfg
+%config(noreplace) %{_sysconfdir}/mock/fedora*.cfg
 
 
 %changelog

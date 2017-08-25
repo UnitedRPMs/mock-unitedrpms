@@ -1,11 +1,10 @@
-%global gitdate 20170722
-%global commit0 39ba597ce0860ac4b663f722eca317514c0b2bce
+%global commit0 82a55dde65dd9ab49773f513446b253f344162c0
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        3%{?gver}%{?dist}
+Release:        4%{?gver}%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Fri Aug 25 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-4.git82a55dd
+- Updated to 1.0-4.git82a55dd
 
 * Sat Jul 22 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-3.git39ba597
 - Updated to 1.0-3.git39ba597

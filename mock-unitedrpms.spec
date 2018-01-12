@@ -1,15 +1,15 @@
-%global commit0 337d3e7ea6e441c6a832f0a0ef50e05c279f712f
+%global commit0 14ce37eb543f88b0a5743fab57fd5d48097173cd
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        7%{?gver}%{?dist}
+Release:        8%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
 License:        MIT
-URL:            https://unitedrpms.github.io/
+URL:            https://github.com/UnitedRPMs/mock-unitedrpms
 Source0:	https://github.com/UnitedRPMs/mock-unitedrpms/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 
 BuildArch:      noarch
@@ -39,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Fri Jan 12 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-8
+- Networking enabled 
 
 * Fri Sep 22 2017 David Vásquez <davidva AT tutanota DOT com> 1.0-7.git337d3e7
 - Updated to 1.0-7.git337d3e7

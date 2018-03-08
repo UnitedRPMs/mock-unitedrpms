@@ -1,10 +1,10 @@
-%global commit0 14ce37eb543f88b0a5743fab57fd5d48097173cd
+%global commit0 aba5fbf20e8130f78c1694c6d3379be3fd105953
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -39,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Wed Mar 07 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-9
+- F29 enabled
 
 * Fri Jan 12 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-8
 - Networking enabled 

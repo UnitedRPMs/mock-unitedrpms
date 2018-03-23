@@ -1,10 +1,10 @@
-%global commit0 aba5fbf20e8130f78c1694c6d3379be3fd105953
+%global commit0 bf6fdac887c239dbe324b8e742efc8d4714b7838
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -39,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Wed Mar 21 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-10
+- Provided fedora-29 configs as symlinks to fedora-rawhide
 
 * Wed Mar 07 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-9
 - F29 enabled

@@ -1,10 +1,10 @@
-%global commit0 a68d6efec3fcc5af137b3d5526df763b3812683e
+%global commit0 1dc735fd6a32376c5561e663a25835e5acfccaa9
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        11%{?dist}
+Release:        12%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -39,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Wed Jun 27 2018 David Va <davidva AT tuta DOT io> 1.0-12
+- Enabled use_host_resolv
 
 * Thu May 10 2018 David Vásquez <davidva AT tutanota DOT com> 1.0-11
 - Provided fedora-29 configs to F29

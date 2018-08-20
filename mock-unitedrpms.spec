@@ -1,10 +1,10 @@
-%global commit0 1dc735fd6a32376c5561e663a25835e5acfccaa9
+%global commit0 2d783a22e1a2ebae90889b363dcd32cad6ee4103
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        12%{?dist}
+Release:        13%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -39,6 +39,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Mon Aug 20 2018 David Va <davidva AT tuta DOT io> 1.0-13
+- Added mock config for F30
 
 * Wed Jun 27 2018 David Va <davidva AT tuta DOT io> 1.0-12
 - Enabled use_host_resolv

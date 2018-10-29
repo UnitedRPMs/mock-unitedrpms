@@ -14,6 +14,7 @@ Source0:	https://github.com/UnitedRPMs/mock-unitedrpms/archive/%{commit0}.tar.gz
 
 BuildArch:      noarch
 Requires:       mock >= 1.2.19
+Requires:       mock-core-configs
 
 %description
 Mock config files for the UnitedRPMs Project

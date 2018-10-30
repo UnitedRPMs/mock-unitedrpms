@@ -1,10 +1,10 @@
-%global commit0 2d783a22e1a2ebae90889b363dcd32cad6ee4103
+%global commit0 e85a4c8a47a0b3fc8e22b25ef578ee2726d2259a
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        13%{?dist}
+Release:        14%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +40,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Mon Oct 29 2018 David Va <davidva AT tuta DOT io> 1.0-14
+- Added mock-core-configs dependency
 
 * Mon Aug 20 2018 David Va <davidva AT tuta DOT io> 1.0-13
 - Added mock config for F30

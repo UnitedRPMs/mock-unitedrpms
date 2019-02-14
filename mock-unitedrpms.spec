@@ -41,7 +41,7 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 %changelog
 
-* Wed Feb 13 2018 David Va <davidva AT tuta DOT io> 1.0-15
+* Wed Feb 13 2019 David Va <davidva AT tuta DOT io> 1.0-15
 - Rawhide fix
 - F27 deleted
 

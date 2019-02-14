@@ -4,7 +4,7 @@
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        14%{?dist}
+Release:        15%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +40,10 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Wed Feb 13 2018 David Va <davidva AT tuta DOT io> 1.0-15
+- Rawhide fix
+- F27 deleted
 
 * Mon Oct 29 2018 David Va <davidva AT tuta DOT io> 1.0-14
 - Added mock-core-configs dependency

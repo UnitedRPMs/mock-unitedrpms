@@ -1,10 +1,10 @@
-%global commit0 2d739c2163a7bf44c3c3970eb7b2fb8a28f7994c
+%global commit0 24ec75e779d43b619aa7e2fd6543f9d14826fa43
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        16%{?dist}
+Release:        17%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +40,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Sat Apr 06 2019 David Va <davidva AT tuta DOT io> 1.0-17
+- Rawhide template enabled
 
 * Wed Mar 13 2019 David Va <davidva AT tuta DOT io> 1.0-16
 - F31 enabled

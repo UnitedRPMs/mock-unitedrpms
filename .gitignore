@@ -3,6 +3,6 @@ BUILDROOT/*
 RPMS/*
 SPECS/*
 SRPMS/*
-mock-unitedrpms*.tar.gz
-
+*.tar.gz
+*.rpm
 .directory

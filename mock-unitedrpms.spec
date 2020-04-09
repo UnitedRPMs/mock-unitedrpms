@@ -1,10 +1,10 @@
-%global commit0 1574b7d753db1a704f4e430e51e527fae488deaf
+%global commit0 b86b446445a920fa0874d8da3f6f2f17fceb943a
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        21%{?dist}
+Release:        22%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +40,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Thu Apr 09 2020 David Va <davidva AT tuta DOT io> 1.0-22
+- Changed to use_bootstrap 
 
 * Sat Feb 22 2020 David Va <davidva AT tuta DOT io> 1.0-21
 - Rebuilt

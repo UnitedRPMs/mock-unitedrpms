@@ -1,16 +1,16 @@
-%global commit0 b86b446445a920fa0874d8da3f6f2f17fceb943a
+%global commit0 6b95800be78512abf1894df5c5f04b2be947cd5f
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        22%{?dist}
+Release:        23%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
 License:        MIT
 URL:            https://github.com/UnitedRPMs/mock-unitedrpms
-Source0:	https://github.com/UnitedRPMs/mock-unitedrpms/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Source0:        https://github.com/UnitedRPMs/mock-unitedrpms/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 
 BuildArch:      noarch
 Requires:       mock >= 1.2.19
@@ -40,6 +40,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Tue May 26 2020 David Va <davidva AT tuta DOT io> 1.0-23
+- New chroot fixes
 
 * Thu Apr 09 2020 David Va <davidva AT tuta DOT io> 1.0-22
 - Changed to use_bootstrap 

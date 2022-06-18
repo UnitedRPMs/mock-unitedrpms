@@ -4,7 +4,7 @@
 
 Name:           mock-unitedrpms
 Version:        1.0
-Release:        25%{?dist}
+Release:        26%{?dist}
 Summary:        Mock config files for the UnitedRPMs
 
 Group:          Development/Tools
@@ -40,6 +40,9 @@ install -pm 0644 unitedrpms*.cfg %{buildroot}%{_sysconfdir}/mock
 
 
 %changelog
+
+* Thu Jun 16 2022 David Va <davidva AT tuta DOT io> 1.0-26
+- F36 features thanks to Pavlo Rudy
 
 * Thu Aug 12 2021 David Va <davidva AT tuta DOT io> 1.0-25
 - Rawhide F36 template enabled
